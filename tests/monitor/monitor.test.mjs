@@ -39,6 +39,7 @@ test('0. 注册/数据校验通过，且 19 个地点、3 个城市保持不变'
 test('0b. 真实来源配置有效：5 个已有地点', async () => {
   const sources = JSON.parse(await readFile(join(ROOT, 'data/monitor/sources.json'), 'utf8'));
   assert.equal(sources.sources.length, 5);
+  assert.equal(sources.sources.filter((x) => x.enabled !== false).length, 4); // 雍和宫 403，已停用
   assert.deepEqual(validateRegistry({ data, verification, sources }), []);
 });
 
@@ -198,6 +199,18 @@ test('10. 新增测试城市：只加数据，不复制业务逻辑', () => with
     assert.ok(validateRegistry({ data: broken, verification: v2 }).some((e) => e.includes('未注册的城市')));
   } finally { s.close(); }
 }));
+
+test('11. 实测误报回归：地址措辞差异、交通通告时间段、法会预订链接不产生候选', async () => {
+  const { sameAddress } = await import('../../scripts/monitor/lib/compare.mjs');
+  const { extractCandidates } = await import('../../scripts/monitor/lib/extract.mjs');
+  assert.ok(sameAddress('上海市安远路170号', '上海市普陀区安远路170号'));
+  assert.ok(sameAddress('浙江省杭州市灵隐路法云弄1号', '浙江省杭州市西湖区法云弄1号'));
+  assert.ok(!sameAddress('浙江省杭州市西湖区法云弄2号', '浙江省杭州市西湖区法云弄1号'));
+  const html = '<p>旅游大巴预约停车实施时间：工作日7:00至17:00</p><p>开放时间：08:00-16:30</p><a href="/fhyd.html">法会预定</a><a href="/book">预约参观</a>';
+  const c = extractCandidates(html, { baseUrl: 'https://a.example.com/', fields: ['openingHours', 'bookingLinks'] }).candidates;
+  assert.deepEqual(c.openingHours.map((x) => x.value), ['08:00-16:30']);
+  assert.deepEqual(c.bookingLinks.map((x) => x.value), ['https://a.example.com/book']);
+});
 
 test('字段状态：缺失数据不被解释为不可预约', () => {
   for (const rec of Object.values(verification.places)) {

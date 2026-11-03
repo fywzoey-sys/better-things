@@ -53,6 +53,7 @@ export function extractBookingLinks(html, baseUrl) {
     const label = htmlToText(m[2]);
     if (!/预约|预定|预订|购票|book|yuyue|reserve/i.test(label + ' ' + m[1])) continue;
     if (/^(javascript|mailto|tel):/i.test(m[1])) continue;
+    if (/法会|法事|佛事|斋|供灯|祈福|超度|放生|水陆/.test(label)) continue; // 宗教活动预订，不是参观预约
     try {
       const abs = new URL(m[1], baseUrl).href;
       if (!out.has(abs)) out.set(abs, label.slice(0, 40));
@@ -73,6 +74,8 @@ export function extractCandidates(html, { baseUrl, fields }) {
     const items = [];
     for (const [tok, idx] of timeTokens(text)) {
       const ctx = text.slice(Math.max(0, idx - 60), idx + 40);
+      const ls = text.lastIndexOf('\n', idx) + 1, le = text.indexOf('\n', idx);
+      if (/停车|大巴|交通|公交|车辆|限行|地铁|班车/.test(text.slice(ls, le < 0 ? text.length : le))) continue; // 交通通告里的时间段不是开放时间
       if (/开放|开门|开馆|时间|营业|参观|入寺|入园|闭馆|开园/.test(ctx)) items.push({ value: tok, evidence: snippet(text, idx, 12, 50) });
     }
     if (items.length) c.openingHours = items;

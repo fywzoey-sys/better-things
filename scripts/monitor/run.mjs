@@ -19,7 +19,7 @@ import { startSampleServer } from './lib/sample.mjs';
 
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '../..');
 const { values: a } = parseArgs({ options: {
-  sample: { type: 'boolean' }, live: { type: 'boolean' }, validate: { type: 'boolean' }, strict: { type: 'boolean' },
+  sample: { type: 'boolean' }, live: { type: 'boolean' }, validate: { type: 'boolean' }, strict: { type: 'boolean' }, print: { type: 'boolean' },
   data: { type: 'string', default: resolve(ROOT, 'js/data.js') },
   verification: { type: 'string', default: resolve(ROOT, 'data/monitor/verification.json') },
   sources: { type: 'string', default: resolve(ROOT, 'data/monitor/sources.json') },
@@ -68,6 +68,7 @@ await writeFile(resolve(dir, 'report.md'), md + '\n');
 await writeFile(resolve(dir, 'report.html'), toHtml(report));
 console.log(`报告已生成：${relative(process.cwd(), dir) || dir}/report.{json,md,html}`);
 for (const p of report.places) console.log(` - ${p.placeId.padEnd(16)} ${p.status}${p.changes.length ? ` (${p.changes.length} 条候选变化)` : ''}`);
+if (a.print) console.log('\n===== REPORT (markdown) =====\n' + md + '\n===== END REPORT =====');
 if (process.env.GITHUB_STEP_SUMMARY) await appendFile(process.env.GITHUB_STEP_SUMMARY, md + '\n');
 if (!unchanged) fail(3, '❌ 正式数据文件在运行期间发生变化，已中止（这是不允许的）');
 const problems = report.places.some((p) => !['unchanged', 'candidate_changes'].includes(p.status));

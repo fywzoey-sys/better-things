@@ -2,20 +2,76 @@
   "schemaVersion": 1,
   "description": "采集来源配置。只登记「官方/权威页面」的公开 URL；不得登记需要登录、验证码或第三方未授权接口的地址。placeId 必须存在于 js/data.js。新增城市无需修改代码，只需在此增加来源条目。",
   "sources": [
-    { "id": "sh-yufo-official", "placeId": "sh-yufo", "type": "official", "url": "https://www.yufotemple.com/",
-      "extract": ["openingHours", "ticket", "address", "reservationPolicy", "bookingLinks"],
-      "notes": "上海玉佛禅寺官网（与 js/data.js 中该地点 sourceUrl 一致）" },
-    { "id": "bj-guozijian-official", "placeId": "bj-guozijian", "type": "official", "url": "http://www.kmgzj.com/cgzn/index.aspx?nodeid=96",
-      "extract": ["openingHours", "ticket", "address", "reservationPolicy", "bookingLinks"],
-      "notes": "孔庙和国子监博物馆官网参观须知（HTTP；站点可能使用 GBK，抓取器会按声明字符集解码）" },
-    { "id": "bj-wutasi-official", "placeId": "bj-wutasi", "type": "official", "url": "https://bjstoneartmuseum.org.cn/CN/service/canguanmenpiao",
-      "extract": ["openingHours", "ticket", "address", "reservationPolicy", "bookingLinks"],
-      "notes": "北京石刻艺术博物馆官网参观门票页" },
-    { "id": "hz-lingyin-official", "placeId": "hz-lingyin", "type": "official", "url": "https://lingyinsi.com/list_57_2.html",
-      "extract": ["openingHours", "ticket", "address", "reservationPolicy", "bookingLinks"],
-      "notes": "杭州灵隐寺官网（预约游览须知列表页）" },
-    { "id": "bj-yonghegong-official", "placeId": "bj-yonghegong", "type": "official", "url": "https://www.yonghegong.cn/2021-03/13/content_77298987.htm",
-      "extract": ["openingHours", "ticket", "address", "reservationPolicy", "bookingLinks"],
-      "notes": "雍和宫官网参观须知（2021 年发布，内容可能已过期，仅作候选对照）" }
+    {
+      "id": "sh-yufo-official",
+      "placeId": "sh-yufo",
+      "type": "official",
+      "url": "https://www.yufotemple.com/",
+      "extract": [
+        "openingHours",
+        "ticket",
+        "address",
+        "reservationPolicy",
+        "bookingLinks"
+      ],
+      "notes": "上海玉佛禅寺官网（与 js/data.js 中该地点 sourceUrl 一致）"
+    },
+    {
+      "id": "bj-guozijian-official",
+      "placeId": "bj-guozijian",
+      "type": "official",
+      "url": "http://www.kmgzj.com/cgzn/index.aspx?nodeid=96",
+      "extract": [
+        "openingHours",
+        "ticket",
+        "address",
+        "reservationPolicy",
+        "bookingLinks"
+      ],
+      "notes": "孔庙和国子监博物馆官网参观须知（HTTP；站点可能使用 GBK，抓取器会按声明字符集解码）"
+    },
+    {
+      "id": "bj-wutasi-official",
+      "placeId": "bj-wutasi",
+      "type": "official",
+      "url": "https://bjstoneartmuseum.org.cn/CN/service/canguanmenpiao",
+      "extract": [
+        "openingHours",
+        "ticket",
+        "address",
+        "reservationPolicy",
+        "bookingLinks"
+      ],
+      "notes": "北京石刻艺术博物馆官网参观门票页；2026-11-03 live 运行从 GitHub 机房连接超时（ETIMEDOUT），可能屏蔽境外 IP；若持续失败请改人工核验。"
+    },
+    {
+      "id": "hz-lingyin-official",
+      "placeId": "hz-lingyin",
+      "type": "official",
+      "url": "https://lingyinsi.com/detail_57_19455.html",
+      "extract": [
+        "openingHours",
+        "ticket",
+        "address",
+        "reservationPolicy",
+        "bookingLinks"
+      ],
+      "notes": "杭州灵隐飞来峰景区预约游览须知（官网具体页；原列表页 list_57_2.html 为公告列表，会混入交通通告）。该链接由 2026-11-03 的 live 报告从官网列表页发现，仍需人工确认页面内容。"
+    },
+    {
+      "id": "bj-yonghegong-official",
+      "placeId": "bj-yonghegong",
+      "type": "official",
+      "url": "https://www.yonghegong.cn/2021-03/13/content_77298987.htm",
+      "extract": [
+        "openingHours",
+        "ticket",
+        "address",
+        "reservationPolicy",
+        "bookingLinks"
+      ],
+      "notes": "雍和宫官网参观须知（2021 年发布，内容可能已过期，仅作候选对照）；2026-11-03 live 运行返回 HTTP 403 拒绝自动访问，已停用，改人工核验（不绕过）。",
+      "enabled": false
+    }
   ]
 }

@@ -48,7 +48,7 @@ jobs:
 
       - name: 运行监测（${{ env.MODE }}）
         run: |
-          ARGS="--${MODE} --out reports"
+          ARGS="--${MODE} --out reports --print"
           if [ -n "$PLACES" ]; then ARGS="$ARGS --places $PLACES"; fi
           node scripts/monitor/run.mjs $ARGS
 
