@@ -10,6 +10,15 @@ export const FORMAL_PATH = {
 };
 const VERIFICATION_KEY = { openingHours: 'openingHours', ticket: 'ticket', address: 'address', reservationPolicy: 'officialBooking', bookingLinks: 'officialBooking' };
 const normAddr = (s) => (s || '').replace(/[\s,，。.、()（）⚠️]/gu, '').replace(/^中国/, '');
+/** Street-level tail after the last province/city/district marker, so "…西湖区法云弄1号" == "…灵隐路法云弄1号" but "1号" != "2号". */
+const addrTail = (s) => { const n = normAddr(s); const m = [...n.matchAll(/[省市区县]/g)].pop(); return m ? n.slice(m.index + 1) : n; };
+export function sameAddress(a, b) {
+  const x = normAddr(a), y = normAddr(b);
+  if (!x || !y) return false;
+  if (x.includes(y) || y.includes(x)) return true;
+  const tx = addrTail(a), ty = addrTail(b);
+  return tx.length >= 3 && ty.length >= 3 && (tx.endsWith(ty) || ty.endsWith(tx));
+}
 
 export function formalValue(place, field) {
   const bi = place.bookingInfo || {};
@@ -57,8 +66,7 @@ export function compareExtraction(place, source, page, extraction, verificationR
       formalOnly = [...f].filter((v) => !values.includes(v));
       if (f.size === 0) kind = 'new_information';
     } else if (field === 'address') {
-      const a = normAddr(values[0]), b = normAddr(formalText);
-      diff = (a && b && (a.includes(b) || b.includes(a))) ? [] : values;
+      diff = sameAddress(values[0], formalText) ? [] : values;
     } else if (field === 'reservationPolicy') {
       const f = formalValue(place, field);
       diff = values.filter((v) => v !== f);
@@ -97,7 +105,7 @@ export function detectConflicts(perSource) {
       const A = new Set(sets[i].values), B = new Set(sets[j].values);
       const sub = (x, y) => [...x].every((v) => y.has(v));
       const differ = field === 'address'
-        ? !(normAddr(sets[i].values[0]).includes(normAddr(sets[j].values[0])) || normAddr(sets[j].values[0]).includes(normAddr(sets[i].values[0])))
+        ? !sameAddress(sets[i].values[0], sets[j].values[0])
         : (field === 'reservationPolicy' ? [...A].join() !== [...B].join() : !sub(A, B) && !sub(B, A));
       if (differ) conflicts.push({ field, fieldLabel: FIELD_LABEL[field], kind: 'cross_source', detail: `来源 ${sets[i].sourceId} 与 ${sets[j].sourceId} 对「${FIELD_LABEL[field]}」给出不一致的值`, sources: [sets[i], sets[j]] });
     }
