@@ -1,0 +1,65 @@
+name: place-monitor
+
+# 好运地图｜半自动更新系统 V1.0（第一期）
+# 只读正式数据 + 上传「待审核报告」。不提交、不推送、不创建 PR、不触发部署。
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: 'sample = 本地模拟来源（不访问外网）；live = 访问 data/monitor/sources.json 中的真实来源'
+        type: choice
+        options: [sample, live]
+        default: sample
+      places:
+        description: '可选：只检查这些地点 ID（逗号分隔），留空则检查全部已配置来源'
+        required: false
+        default: ''
+  # 启用步骤：先手动运行 mode=sample，再手动运行 mode=live，两次都在 Actions 页面确认成功、报告可下载后，
+  # 取消下面三行的注释。09:23 Asia/Shanghai = 01:23 UTC（周一）。GitHub 定时任务可能延迟数分钟。
+  # schedule:
+  #   - cron: '23 1 * * 1'
+  # 注意：定时触发时 inputs 为空，下方 mode 会回退为 live。
+
+permissions:
+  contents: read   # 只读。第二期创建 PR 时另建一个单独授权的工作流，不在此扩权。
+
+concurrency:
+  group: place-monitor
+  cancel-in-progress: false
+
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      MODE: ${{ github.event.inputs.mode || 'live' }}
+      PLACES: ${{ github.event.inputs.places || '' }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: 校验数据与注册表
+        run: node scripts/monitor/run.mjs --validate
+
+      - name: 单元与场景测试
+        run: node --test tests/monitor/*.test.mjs
+
+      - name: 运行监测（${{ env.MODE }}）
+        run: |
+          ARGS="--${MODE} --out reports"
+          if [ -n "$PLACES" ]; then ARGS="$ARGS --places $PLACES"; fi
+          node scripts/monitor/run.mjs $ARGS
+
+      - name: 确认正式数据未被修改
+        run: git diff --exit-code -- js data/reviewed-content.json data/monitor/verification.json data/monitor/sources.json
+
+      - name: 上传待审核报告
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: place-review-report-${{ github.run_id }}
+          path: reports/
+          if-no-files-found: warn
+          retention-days: 30
