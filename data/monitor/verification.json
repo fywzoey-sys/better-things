@@ -1,0 +1,2198 @@
+{
+  "schemaVersion": 1,
+  "statusMeaning": {
+    "not_supplied": "未补充",
+    "unverified": "未核验",
+    "verified": "已核验",
+    "needs_review": "需要复核",
+    "not_applicable": "不适用"
+  },
+  "note": "字段级核验状态的唯一维护处。正式展示数据仍在 js/data.js。人工核验后在此更新 status/verifiedAt/source。",
+  "places": {
+    "sh-longhua": {
+      "cityId": "shanghai",
+      "lastCollectedAt": null,
+      "lastFactCheckedAt": "2026-11-02",
+      "sourceStatusText": "部分核实（需现场确认）",
+      "fields": {
+        "basicInfo": {
+          "status": "needs_review",
+          "source": {
+            "url": "http://mp.weixin.qq.com/s?__biz=MjM5MzYxNzk1NA==&mid=2650961630&idx=1&sn=205135a424ecdf2e3659dceef47d1923",
+            "label": "玉巳纳福 上海龙华古寺二零二五乙巳年新春开放通告（寺方公众号）"
+          },
+          "verifiedAt": null,
+          "lastCollectedAt": null,
+          "note": ""
+        },
+        "address": {
+          "status": "needs_review",
+          "source": {
+            "url": "http://mp.weixin.qq.com/s?__biz=MjM5MzYxNzk1NA==&mid=2650961630&idx=1&sn=205135a424ecdf2e3659dceef47d1923",
+            "label": "玉巳纳福 上海龙华古寺二零二五乙巳年新春开放通告（寺方公众号）"
+          },
+          "verifiedAt": null,
+          "lastCollectedAt": null,
+          "note": ""
+        },
+        "openStatus": {
+          "status": "unverified",
+          "source": {
+            "url": "http://mp.weixin.qq.com/s?__biz=MjM5MzYxNzk1NA==&mid=2650961630&idx=1&sn=205135a424ecdf2e3659dceef47d1923",
+            "label": "玉巳纳福 上海龙华古寺二零二五乙巳年新春开放通告（寺方公众号）"
+          },
+          "verifiedAt": null,
+          "lastCollectedAt": null,
+          "note": ""
+        },
+        "openingHours": {
+          "status": "needs_review",
+          "source": {
+            "url": "http://mp.weixin.qq.com/s?__biz=MjM5MzYxNzk1NA==&mid=2650961630&idx=1&sn=205135a424ecdf2e3659dceef47d1923",
+            "label": "玉巳纳福 上海龙华古寺二零二五乙巳年新春开放通告（寺方公众号）"
+          },
+          "verifiedAt": null,
+          "lastCollectedAt": null,
+          "note": ""
+        },
+        "ticket": {
+          "status": "needs_review",
+          "source": {
+            "url": "http://mp.weixin.qq.com/s?__biz=MjM5MzYxNzk1NA==&mid=2650961630&idx=1&sn=205135a424ecdf2e3659dceef47d1923",
+            "label": "玉巳纳福 上海龙华古寺二零二五乙巳年新春开放通告（寺方公众号）"
+          },
+          "verifiedAt": null,
+          "lastCollectedAt": null,
+          "note": ""
+        },
+        "officialBooking": {
+          "status": "unverified",
+          "source": {
+            "url": "http://mp.weixin.qq.com/s?__biz=MjM5MzYxNzk1NA==&mid=2650961630&idx=1&sn=205135a424ecdf2e3659dceef47d1923",
+            "label": "玉巳纳福 上海龙华古寺二零二五乙巳年新春开放通告（寺方公众号）"
+          },
+          "verifiedAt": null,
+          "lastCollectedAt": null,
+          "note": "开放状态/预约入口未核验不代表不可预约"
+        },
+        "platformBooking": {
+          "携程": {
+            "status": "unverified",
+            "source": {
+              "url": "",
+              "label": ""
+            },
+            "verifiedAt": null,
+            "lastCollectedAt": null,
+            "note": ""
+          },
+          "美团": {
+            "status": "unverified",
+            "source": {
+              "url": "",
+              "label": ""
+            },
+            "verifiedAt": null,
+            "lastCollectedAt": null,
+            "note": ""
+          },
+          "同程": {
+            "status": "unverified",
+            "source": {
+              "url": "",
+              "label": ""
+            },
+            "verifiedAt": null,
+            "lastCollectedAt": null,
+            "note": ""
+          },
+          "飞猪": {
+            "status": "unverified",
+            "source": {
+              "url": "",
+              "label": ""
+            },
+            "verifiedAt": null,
+            "lastCollectedAt": null,
+            "note": ""
+          }
+        }
+      },
+      "migration": {
+        "at": "2026-11-03",
+        "from": "js/data.js (V1.0 bookingInfo + verificationStatus text)",
+        "rule": "verified 仅当原核验文本以「已核实」开头；含⚠️的字段降为 needs_review；预约/平台 pending → unverified；本次迁移未访问任何外部来源"
+      }
+    },
+    "sh-jing-an": {
+      "cityId": "shanghai",
+      "lastCollectedAt": null,
+      "lastFactCheckedAt": "2026-11-02",
+      "sourceStatusText": "部分核实（需现场确认）",
+      "fields": {
+        "basicInfo": {
+          "status": "needs_review",
+          "source": {
+            "url": "https://cmp.whlyj.sh.gov.cn/CMP/tpr_traceInit.ac?tripId=a8c314d9e7614fb6ae53fada758da9c6",
+            "label": "2025年「必玩榜」榜单出炉 上海上榜17个（上海市文化和旅游局）"
+          },
+          "verifiedAt": null,
+          "lastCollectedAt": null,
+          "note": ""
+        },
+        "address": {
+          "status": "needs_review",
+          "source": {
+            "url": "https://cmp.whlyj.sh.gov.cn/CMP/tpr_traceInit.ac?tripId=a8c314d9e7614fb6ae53fada758da9c6",
+            "label": "2025年「必玩榜」榜单出炉 上海上榜17个（上海市文化和旅游局）"
+          },
+          "verifiedAt": null,
+          "lastCollectedAt": null,
+          "note": ""
+        },
+        "openStatus": {
+          "status": "unverified",
+          "source": {
+            "url": "https://cmp.whlyj.sh.gov.cn/CMP/tpr_traceInit.ac?tripId=a8c314d9e7614fb6ae53fada758da9c6",
+            "label": "2025年「必玩榜」榜单出炉 上海上榜17个（上海市文化和旅游局）"
+          },
+          "verifiedAt": null,
+          "lastCollectedAt": null,
+          "note": ""
+        },
+        "openingHours": {
+          "status": "needs_review",
+          "source": {
+            "url": "https://cmp.whlyj.sh.gov.cn/CMP/tpr_traceInit.ac?tripId=a8c314d9e7614fb6ae53fada758da9c6",
+            "label": "2025年「必玩榜」榜单出炉 上海上榜17个（上海市文化和旅游局）"
+          },
+          "verifiedAt": null,
+          "lastCollectedAt": null,
+          "note": ""
+        },
+        "ticket": {
+          "status": "needs_review",
+          "source": {
+            "url": "https://cmp.whlyj.sh.gov.cn/CMP/tpr_traceInit.ac?tripId=a8c314d9e7614fb6ae53fada758da9c6",
+            "label": "2025年「必玩榜」榜单出炉 上海上榜17个（上海市文化和旅游局）"
+          },
+          "verifiedAt": null,
+          "lastCollectedAt": null,
+          "note": ""
+        },
+        "officialBooking": {
+          "status": "unverified",
+          "source": {
+            "url": "https://cmp.whlyj.sh.gov.cn/CMP/tpr_traceInit.ac?tripId=a8c314d9e7614fb6ae53fada758da9c6",
+            "label": "2025年「必玩榜」榜单出炉 上海上榜17个（上海市文化和旅游局）"
+          },
+          "verifiedAt": null,
+          "lastCollectedAt": null,
+          "note": "开放状态/预约入口未核验不代表不可预约"
+        },
+        "platformBooking": {
+          "携程": {
+            "status": "unverified",
+            "source": {
+              "url": "",
+              "label": ""
+            },
+            "verifiedAt": null,
+            "lastCollectedAt": null,
+            "note": ""
+          },
+          "美团": {
+            "status": "unverified",
+            "source": {
+              "url": "",
+              "label": ""
+            },
+            "verifiedAt": null,
+            "lastCollectedAt": null,
+            "note": ""
+          },
+          "同程": {
+            "status": "unverified",
+            "source": {
+              "url": "",
+              "label": ""
+            },
+            "verifiedAt": null,
+            "lastCollectedAt": null,
+            "note": ""
+          },
+          "飞猪": {
+            "status": "unverified",
+            "source": {
+              "url": "",
+              "label": ""
+            },
+            "verifiedAt": null,
+            "lastCollectedAt": null,
+            "note": ""
+          }
+        }
+      },
+      "migration": {
+        "at": "2026-11-03",
+        "from": "js/data.js (V1.0 bookingInfo + verificationStatus text)",
+        "rule": "verified 仅当原核验文本以「已核实」开头；含⚠️的字段降为 needs_review；预约/平台 pending → unverified；本次迁移未访问任何外部来源"
+      }
+    },
+    "sh-chenghuang": {
+      "cityId": "shanghai",
+      "lastCollectedAt": null,
+      "lastFactCheckedAt": "2026-11-02",
+      "sourceStatusText": "部分核实（票价需现场确认）",
+      "fields": {
+        "basicInfo": {
+          "status": "needs_review",
+          "source": {
+            "url": "https://www.shhuangpu.gov.cn/xw/001015/20250425/7311cc13-daa4-4f6b-ab9e-0ee03e89f0c9.html",
+            "label": "上海城隍庙开放时间调整（上海市黄浦区人民政府，2025-04-25）"
+          },
+          "verifiedAt": null,
+          "lastCollectedAt": null,
+          "note": ""
+        },
+        "address": {
+          "status": "needs_review",
+          "source": {
+            "url": "https://www.shhuangpu.gov.cn/xw/001015/20250425/7311cc13-daa4-4f6b-ab9e-0ee03e89f0c9.html",
+            "label": "上海城隍庙开放时间调整（上海市黄浦区人民政府，2025-04-25）"
+          },
+          "verifiedAt": null,
+          "lastCollectedAt": null,
+          "note": ""
+        },
+        "openStatus": {
+          "status": "unverified",
+          "source": {
+            "url": "https://www.shhuangpu.gov.cn/xw/001015/20250425/7311cc13-daa4-4f6b-ab9e-0ee03e89f0c9.html",
+            "label": "上海城隍庙开放时间调整（上海市黄浦区人民政府，2025-04-25）"
+          },
+          "verifiedAt": null,
+          "lastCollectedAt": null,
+          "note": ""
+        },
+        "openingHours": {
+          "status": "needs_review",
+          "source": {
+            "url": "https://www.shhuangpu.gov.cn/xw/001015/20250425/7311cc13-daa4-4f6b-ab9e-0ee03e89f0c9.html",
+            "label": "上海城隍庙开放时间调整（上海市黄浦区人民政府，2025-04-25）"
+          },
+          "verifiedAt": null,
+          "lastCollectedAt": null,
+          "note": ""
+        },
+        "ticket": {
+          "status": "needs_review",
+          "source": {
+            "url": "https://www.shhuangpu.gov.cn/xw/001015/20250425/7311cc13-daa4-4f6b-ab9e-0ee03e89f0c9.html",
+            "label": "上海城隍庙开放时间调整（上海市黄浦区人民政府，2025-04-25）"
+          },
+          "verifiedAt": null,
+          "lastCollectedAt": null,
+          "note": ""
+        },
+        "officialBooking": {
+          "status": "unverified",
+          "source": {
+            "url": "https://www.shhuangpu.gov.cn/xw/001015/20250425/7311cc13-daa4-4f6b-ab9e-0ee03e89f0c9.html",
+            "label": "上海城隍庙开放时间调整（上海市黄浦区人民政府，2025-04-25）"
+          },
+          "verifiedAt": null,
+          "lastCollectedAt": null,
+          "note": "开放状态/预约入口未核验不代表不可预约"
+        },
+        "platformBooking": {
+          "携程": {
+            "status": "unverified",
+            "source": {
+              "url": "",
+              "label": ""
+            },
+            "verifiedAt": null,
+            "lastCollectedAt": null,
+            "note": ""
+          },
+          "美团": {
+            "status": "unverified",
+            "source": {
+              "url": "",
+              "label": ""
+            },
+            "verifiedAt": null,
+            "lastCollectedAt": null,
+            "note": ""
+          },
+          "同程": {
+            "status": "unverified",
+            "source": {
+              "url": "",
+              "label": ""
+            },
+            "verifiedAt": null,
+            "lastCollectedAt": null,
+            "note": ""
+          },
+          "飞猪": {
+            "status": "unverified",
+            "source": {
+              "url": "",
+              "label": ""
+            },
+            "verifiedAt": null,
+            "lastCollectedAt": null,
+            "note": ""
+          }
+        }
+      },
+      "migration": {
+        "at": "2026-11-03",
+        "from": "js/data.js (V1.0 bookingInfo + verificationStatus text)",
+        "rule": "verified 仅当原核验文本以「已核实」开头；含⚠️的字段降为 needs_review；预约/平台 pending → unverified；本次迁移未访问任何外部来源"
+      }
+    },
+    "sh-yufo": {
+      "cityId": "shanghai",
+      "lastCollectedAt": null,
+      "lastFactCheckedAt": "2026-11-02",
+      "sourceStatusText": "已核实",
+      "fields": {
+        "basicInfo": {
+          "status": "verified",
+          "source": {
+            "url": "https://www.yufotemple.com/",
+            "label": "上海玉佛禅寺官网（地址、开放时间与免香花券通告）"
+          },
+          "verifiedAt": "2026-11-02",
+          "lastCollectedAt": null,
+          "note": ""
+        },
+        "address": {
+          "status": "verified",
+          "source": {
+            "url": "https://www.yufotemple.com/",
+            "label": "上海玉佛禅寺官网（地址、开放时间与免香花券通告）"
+          },
+          "verifiedAt": "2026-11-02",
+          "lastCollectedAt": null,
+          "note": ""
+        },
+        "openStatus": {
+          "status": "unverified",
+          "source": {
+            "url": "https://www.yufotemple.com/",
+            "label": "上海玉佛禅寺官网（地址、开放时间与免香花券通告）"
+          },
+          "verifiedAt": null,
+          "lastCollectedAt": null,
+          "note": ""
+        },
+        "openingHours": {
+          "status": "needs_review",
+          "source": {
+            "url": "https://www.yufotemple.com/",
+            "label": "上海玉佛禅寺官网（地址、开放时间与免香花券通告）"
+          },
+          "verifiedAt": null,
+          "lastCollectedAt": null,
+          "note": ""
+        },
+        "ticket": {
+          "status": "verified",
+          "source": {
+            "url": "https://www.yufotemple.com/",
+            "label": "上海玉佛禅寺官网（地址、开放时间与免香花券通告）"
+          },
+          "verifiedAt": "2026-11-02",
+          "lastCollectedAt": null,
+          "note": ""
+        },
+        "officialBooking": {
+          "status": "unverified",
+          "source": {
+            "url": "https://www.yufotemple.com/",
+            "label": "上海玉佛禅寺官网（地址、开放时间与免香花券通告）"
+          },
+          "verifiedAt": null,
+          "lastCollectedAt": null,
+          "note": "开放状态/预约入口未核验不代表不可预约"
+        },
+        "platformBooking": {
+          "携程": {
+            "status": "unverified",
+            "source": {
+              "url": "",
+              "label": ""
+            },
+            "verifiedAt": null,
+            "lastCollectedAt": null,
+            "note": ""
+          },
+          "美团": {
+            "status": "unverified",
+            "source": {
+              "url": "",
+              "label": ""
+            },
+            "verifiedAt": null,
+            "lastCollectedAt": null,
+            "note": ""
+          },
+          "同程": {
+            "status": "unverified",
+            "source": {
+              "url": "",
+              "label": ""
+            },
+            "verifiedAt": null,
+            "lastCollectedAt": null,
+            "note": ""
+          },
+          "飞猪": {
+            "status": "unverified",
+            "source": {
+              "url": "",
+              "label": ""
+            },
+            "verifiedAt": null,
+            "lastCollectedAt": null,
+            "note": ""
+          }
+        }
+      },
+      "migration": {
+        "at": "2026-11-03",
+        "from": "js/data.js (V1.0 bookingInfo + verificationStatus text)",
+        "rule": "verified 仅当原核验文本以「已核实」开头；含⚠️的字段降为 needs_review；预约/平台 pending → unverified；本次迁移未访问任何外部来源"
+      }
+    },
+    "sh-confucius": {
+      "cityId": "shanghai",
+      "lastCollectedAt": null,
+      "lastFactCheckedAt": "2026-11-02",
+      "sourceStatusText": "开放状态待确认",
+      "fields": {
+        "basicInfo": {
+          "status": "needs_review",
+          "source": {
+            "url": "https://www.shhuangpu.gov.cn/zw/009001/009001015/009001015006/20260428/26671075-88be-4917-9f39-cc23b824aefa.html",
+            "label": "黄浦区人民政府对市政协十四届四次会议第0933号提案的答复（2026-04-28）"
+          },
+          "verifiedAt": null,
+          "lastCollectedAt": null,
+          "note": ""
+        },
+        "address": {
+          "status": "needs_review",
+          "source": {
+            "url": "https://www.shhuangpu.gov.cn/zw/009001/009001015/009001015006/20260428/26671075-88be-4917-9f39-cc23b824aefa.html",
+            "label": "黄浦区人民政府对市政协十四届四次会议第0933号提案的答复（2026-04-28）"
+          },
+          "verifiedAt": null,
+          "lastCollectedAt": null,
+          "note": ""
+        },
+        "openStatus": {
+          "status": "unverified",
+          "source": {
+            "url": "https://www.shhuangpu.gov.cn/zw/009001/009001015/009001015006/20260428/26671075-88be-4917-9f39-cc23b824aefa.html",
+            "label": "黄浦区人民政府对市政协十四届四次会议第0933号提案的答复（2026-04-28）"
+          },
+          "verifiedAt": null,
+          "lastCollectedAt": null,
+          "note": ""
+        },
+        "openingHours": {
+          "status": "needs_review",
+          "source": {
+            "url": "https://www.shhuangpu.gov.cn/zw/009001/009001015/009001015006/20260428/26671075-88be-4917-9f39-cc23b824aefa.html",
+            "label": "黄浦区人民政府对市政协十四届四次会议第0933号提案的答复（2026-04-28）"
+          },
+          "verifiedAt": null,
+          "lastCollectedAt": null,
+          "note": ""
+        },
+        "ticket": {
+          "status": "needs_review",
+          "source": {
+            "url": "https://www.shhuangpu.gov.cn/zw/009001/009001015/009001015006/20260428/26671075-88be-4917-9f39-cc23b824aefa.html",
+            "label": "黄浦区人民政府对市政协十四届四次会议第0933号提案的答复（2026-04-28）"
+          },
+          "verifiedAt": null,
+          "lastCollectedAt": null,
+          "note": ""
+        },
+        "officialBooking": {
+          "status": "unverified",
+          "source": {
+            "url": "https://www.shhuangpu.gov.cn/zw/009001/009001015/009001015006/20260428/26671075-88be-4917-9f39-cc23b824aefa.html",
+            "label": "黄浦区人民政府对市政协十四届四次会议第0933号提案的答复（2026-04-28）"
+          },
+          "verifiedAt": null,
+          "lastCollectedAt": null,
+          "note": "开放状态/预约入口未核验不代表不可预约"
+        },
+        "platformBooking": {
+          "携程": {
+            "status": "unverified",
+            "source": {
+              "url": "",
+              "label": ""
+            },
+            "verifiedAt": null,
+            "lastCollectedAt": null,
+            "note": ""
+          },
+          "美团": {
+            "status": "unverified",
+            "source": {
+              "url": "",
+              "label": ""
+            },
+            "verifiedAt": null,
+            "lastCollectedAt": null,
+            "note": ""
+          },
+          "同程": {
+            "status": "unverified",
+            "source": {
+              "url": "",
+              "label": ""
+            },
+            "verifiedAt": null,
+            "lastCollectedAt": null,
+            "note": ""
+          },
+          "飞猪": {
+            "status": "unverified",
+            "source": {
+              "url": "",
+              "label": ""
+            },
+            "verifiedAt": null,
+            "lastCollectedAt": null,
+            "note": ""
+          }
+        }
+      },
+      "migration": {
+        "at": "2026-11-03",
+        "from": "js/data.js (V1.0 bookingInfo + verificationStatus text)",
+        "rule": "verified 仅当原核验文本以「已核实」开头；含⚠️的字段降为 needs_review；预约/平台 pending → unverified；本次迁移未访问任何外部来源"
+      }
+    },
+    "sh-donglin": {
+      "cityId": "shanghai",
+      "lastCollectedAt": null,
+      "lastFactCheckedAt": "2026-11-02",
+      "sourceStatusText": "部分核实（票价体系冲突）",
+      "fields": {
+        "basicInfo": {
+          "status": "needs_review",
+          "source": {
+            "url": "https://www.jinshan.gov.cn/jsgk-rmsh/20201007/784852.html",
+            "label": "旅游景区（上海市金山区人民政府，2020）+ 2025年12月元旦活动公告"
+          },
+          "verifiedAt": null,
+          "lastCollectedAt": null,
+          "note": ""
+        },
+        "address": {
+          "status": "needs_review",
+          "source": {
+            "url": "https://www.jinshan.gov.cn/jsgk-rmsh/20201007/784852.html",
+            "label": "旅游景区（上海市金山区人民政府，2020）+ 2025年12月元旦活动公告"
+          },
+          "verifiedAt": null,
+          "lastCollectedAt": null,
+          "note": ""
+        },
+        "openStatus": {
+          "status": "unverified",
+          "source": {
+            "url": "https://www.jinshan.gov.cn/jsgk-rmsh/20201007/784852.html",
+            "label": "旅游景区（上海市金山区人民政府，2020）+ 2025年12月元旦活动公告"
+          },
+          "verifiedAt": null,
+          "lastCollectedAt": null,
+          "note": ""
+        },
+        "openingHours": {
+          "status": "needs_review",
+          "source": {
+            "url": "https://www.jinshan.gov.cn/jsgk-rmsh/20201007/784852.html",
+            "label": "旅游景区（上海市金山区人民政府，2020）+ 2025年12月元旦活动公告"
+          },
+          "verifiedAt": null,
+          "lastCollectedAt": null,
+          "note": ""
+        },
+        "ticket": {
+          "status": "needs_review",
+          "source": {
+            "url": "https://www.jinshan.gov.cn/jsgk-rmsh/20201007/784852.html",
+            "label": "旅游景区（上海市金山区人民政府，2020）+ 2025年12月元旦活动公告"
+          },
+          "verifiedAt": null,
+          "lastCollectedAt": null,
+          "note": ""
+        },
+        "officialBooking": {
+          "status": "unverified",
+          "source": {
+            "url": "https://www.jinshan.gov.cn/jsgk-rmsh/20201007/784852.html",
+            "label": "旅游景区（上海市金山区人民政府，2020）+ 2025年12月元旦活动公告"
+          },
+          "verifiedAt": null,
+          "lastCollectedAt": null,
+          "note": "开放状态/预约入口未核验不代表不可预约"
+        },
+        "platformBooking": {
+          "携程": {
+            "status": "unverified",
+            "source": {
+              "url": "",
+              "label": ""
+            },
+            "verifiedAt": null,
+            "lastCollectedAt": null,
+            "note": ""
+          },
+          "美团": {
+            "status": "unverified",
+            "source": {
+              "url": "",
+              "label": ""
+            },
+            "verifiedAt": null,
+            "lastCollectedAt": null,
+            "note": ""
+          },
+          "同程": {
+            "status": "unverified",
+            "source": {
+              "url": "",
+              "label": ""
+            },
+            "verifiedAt": null,
+            "lastCollectedAt": null,
+            "note": ""
+          },
+          "飞猪": {
+            "status": "unverified",
+            "source": {
+              "url": "",
+              "label": ""
+            },
+            "verifiedAt": null,
+            "lastCollectedAt": null,
+            "note": ""
+          }
+        }
+      },
+      "migration": {
+        "at": "2026-11-03",
+        "from": "js/data.js (V1.0 bookingInfo + verificationStatus text)",
+        "rule": "verified 仅当原核验文本以「已核实」开头；含⚠️的字段降为 needs_review；预约/平台 pending → unverified；本次迁移未访问任何外部来源"
+      }
+    },
+    "bj-yonghegong": {
+      "cityId": "beijing",
+      "lastCollectedAt": null,
+      "lastFactCheckedAt": "2026-11-02",
+      "sourceStatusText": "部分核实（地址与周一安排需确认）",
+      "fields": {
+        "basicInfo": {
+          "status": "needs_review",
+          "source": {
+            "url": "https://www.yonghegong.cn/2021-03/13/content_77298987.htm",
+            "label": "雍和宫参观须知（北京雍和宫官网）"
+          },
+          "verifiedAt": null,
+          "lastCollectedAt": null,
+          "note": ""
+        },
+        "address": {
+          "status": "needs_review",
+          "source": {
+            "url": "https://www.yonghegong.cn/2021-03/13/content_77298987.htm",
+            "label": "雍和宫参观须知（北京雍和宫官网）"
+          },
+          "verifiedAt": null,
+          "lastCollectedAt": null,
+          "note": ""
+        },
+        "openStatus": {
+          "status": "unverified",
+          "source": {
+            "url": "https://www.yonghegong.cn/2021-03/13/content_77298987.htm",
+            "label": "雍和宫参观须知（北京雍和宫官网）"
+          },
+          "verifiedAt": null,
+          "lastCollectedAt": null,
+          "note": ""
+        },
+        "openingHours": {
+          "status": "needs_review",
+          "source": {
+            "url": "https://www.yonghegong.cn/2021-03/13/content_77298987.htm",
+            "label": "雍和宫参观须知（北京雍和宫官网）"
+          },
+          "verifiedAt": null,
+          "lastCollectedAt": null,
+          "note": ""
+        },
+        "ticket": {
+          "status": "needs_review",
+          "source": {
+            "url": "https://www.yonghegong.cn/2021-03/13/content_77298987.htm",
+            "label": "雍和宫参观须知（北京雍和宫官网）"
+          },
+          "verifiedAt": null,
+          "lastCollectedAt": null,
+          "note": ""
+        },
+        "officialBooking": {
+          "status": "unverified",
+          "source": {
+            "url": "https://www.yonghegong.cn/2021-03/13/content_77298987.htm",
+            "label": "雍和宫参观须知（北京雍和宫官网）"
+          },
+          "verifiedAt": null,
+          "lastCollectedAt": null,
+          "note": "开放状态/预约入口未核验不代表不可预约"
+        },
+        "platformBooking": {
+          "携程": {
+            "status": "unverified",
+            "source": {
+              "url": "",
+              "label": ""
+            },
+            "verifiedAt": null,
+            "lastCollectedAt": null,
+            "note": ""
+          },
+          "美团": {
+            "status": "unverified",
+            "source": {
+              "url": "",
+              "label": ""
+            },
+            "verifiedAt": null,
+            "lastCollectedAt": null,
+            "note": ""
+          },
+          "同程": {
+            "status": "unverified",
+            "source": {
+              "url": "",
+              "label": ""
+            },
+            "verifiedAt": null,
+            "lastCollectedAt": null,
+            "note": ""
+          },
+          "飞猪": {
+            "status": "unverified",
+            "source": {
+              "url": "",
+              "label": ""
+            },
+            "verifiedAt": null,
+            "lastCollectedAt": null,
+            "note": ""
+          }
+        }
+      },
+      "migration": {
+        "at": "2026-11-03",
+        "from": "js/data.js (V1.0 bookingInfo + verificationStatus text)",
+        "rule": "verified 仅当原核验文本以「已核实」开头；含⚠️的字段降为 needs_review；预约/平台 pending → unverified；本次迁移未访问任何外部来源"
+      }
+    },
+    "bj-tanzhe": {
+      "cityId": "beijing",
+      "lastCollectedAt": null,
+      "lastFactCheckedAt": "2026-11-02",
+      "sourceStatusText": "部分核实（无独立官网）",
+      "fields": {
+        "basicInfo": {
+          "status": "needs_review",
+          "source": {
+            "url": "http://mp.weixin.qq.com/s?__biz=Mzk0OTc0OTE5NA==&mid=2247493093&idx=3&sn=aa2c74ac446b52a78da73030bd89dfe5",
+            "label": "潭柘寺景区春节期间入园须知（潭柘寺风景区官方微信公众号）"
+          },
+          "verifiedAt": null,
+          "lastCollectedAt": null,
+          "note": ""
+        },
+        "address": {
+          "status": "needs_review",
+          "source": {
+            "url": "http://mp.weixin.qq.com/s?__biz=Mzk0OTc0OTE5NA==&mid=2247493093&idx=3&sn=aa2c74ac446b52a78da73030bd89dfe5",
+            "label": "潭柘寺景区春节期间入园须知（潭柘寺风景区官方微信公众号）"
+          },
+          "verifiedAt": null,
+          "lastCollectedAt": null,
+          "note": ""
+        },
+        "openStatus": {
+          "status": "unverified",
+          "source": {
+            "url": "http://mp.weixin.qq.com/s?__biz=Mzk0OTc0OTE5NA==&mid=2247493093&idx=3&sn=aa2c74ac446b52a78da73030bd89dfe5",
+            "label": "潭柘寺景区春节期间入园须知（潭柘寺风景区官方微信公众号）"
+          },
+          "verifiedAt": null,
+          "lastCollectedAt": null,
+          "note": ""
+        },
+        "openingHours": {
+          "status": "needs_review",
+          "source": {
+            "url": "http://mp.weixin.qq.com/s?__biz=Mzk0OTc0OTE5NA==&mid=2247493093&idx=3&sn=aa2c74ac446b52a78da73030bd89dfe5",
+            "label": "潭柘寺景区春节期间入园须知（潭柘寺风景区官方微信公众号）"
+          },
+          "verifiedAt": null,
+          "lastCollectedAt": null,
+          "note": ""
+        },
+        "ticket": {
+          "status": "needs_review",
+          "source": {
+            "url": "http://mp.weixin.qq.com/s?__biz=Mzk0OTc0OTE5NA==&mid=2247493093&idx=3&sn=aa2c74ac446b52a78da73030bd89dfe5",
+            "label": "潭柘寺景区春节期间入园须知（潭柘寺风景区官方微信公众号）"
+          },
+          "verifiedAt": null,
+          "lastCollectedAt": null,
+          "note": ""
+        },
+        "officialBooking": {
+          "status": "unverified",
+          "source": {
+            "url": "http://mp.weixin.qq.com/s?__biz=Mzk0OTc0OTE5NA==&mid=2247493093&idx=3&sn=aa2c74ac446b52a78da73030bd89dfe5",
+            "label": "潭柘寺景区春节期间入园须知（潭柘寺风景区官方微信公众号）"
+          },
+          "verifiedAt": null,
+          "lastCollectedAt": null,
+          "note": "开放状态/预约入口未核验不代表不可预约"
+        },
+        "platformBooking": {
+          "携程": {
+            "status": "unverified",
+            "source": {
+              "url": "",
+              "label": ""
+            },
+            "verifiedAt": null,
+            "lastCollectedAt": null,
+            "note": ""
+          },
+          "美团": {
+            "status": "unverified",
+            "source": {
+              "url": "",
+              "label": ""
+            },
+            "verifiedAt": null,
+            "lastCollectedAt": null,
+            "note": ""
+          },
+          "同程": {
+            "status": "unverified",
+            "source": {
+              "url": "",
+              "label": ""
+            },
+            "verifiedAt": null,
+            "lastCollectedAt": null,
+            "note": ""
+          },
+          "飞猪": {
+            "status": "unverified",
+            "source": {
+              "url": "",
+              "label": ""
+            },
+            "verifiedAt": null,
+            "lastCollectedAt": null,
+            "note": ""
+          }
+        }
+      },
+      "migration": {
+        "at": "2026-11-03",
+        "from": "js/data.js (V1.0 bookingInfo + verificationStatus text)",
+        "rule": "verified 仅当原核验文本以「已核实」开头；含⚠️的字段降为 needs_review；预约/平台 pending → unverified；本次迁移未访问任何外部来源"
+      }
+    },
+    "bj-guozijian": {
+      "cityId": "beijing",
+      "lastCollectedAt": null,
+      "lastFactCheckedAt": "2026-11-02",
+      "sourceStatusText": "已核实",
+      "fields": {
+        "basicInfo": {
+          "status": "verified",
+          "source": {
+            "url": "http://www.kmgzj.com/cgzn/index.aspx?nodeid=96",
+            "label": "参观须知（孔庙和国子监博物馆官网）"
+          },
+          "verifiedAt": "2026-11-02",
+          "lastCollectedAt": null,
+          "note": ""
+        },
+        "address": {
+          "status": "verified",
+          "source": {
+            "url": "http://www.kmgzj.com/cgzn/index.aspx?nodeid=96",
+            "label": "参观须知（孔庙和国子监博物馆官网）"
+          },
+          "verifiedAt": "2026-11-02",
+          "lastCollectedAt": null,
+          "note": ""
+        },
+        "openStatus": {
+          "status": "unverified",
+          "source": {
+            "url": "http://www.kmgzj.com/cgzn/index.aspx?nodeid=96",
+            "label": "参观须知（孔庙和国子监博物馆官网）"
+          },
+          "verifiedAt": null,
+          "lastCollectedAt": null,
+          "note": ""
+        },
+        "openingHours": {
+          "status": "verified",
+          "source": {
+            "url": "http://www.kmgzj.com/cgzn/index.aspx?nodeid=96",
+            "label": "参观须知（孔庙和国子监博物馆官网）"
+          },
+          "verifiedAt": "2026-11-02",
+          "lastCollectedAt": null,
+          "note": ""
+        },
+        "ticket": {
+          "status": "verified",
+          "source": {
+            "url": "http://www.kmgzj.com/cgzn/index.aspx?nodeid=96",
+            "label": "参观须知（孔庙和国子监博物馆官网）"
+          },
+          "verifiedAt": "2026-11-02",
+          "lastCollectedAt": null,
+          "note": ""
+        },
+        "officialBooking": {
+          "status": "unverified",
+          "source": {
+            "url": "http://www.kmgzj.com/cgzn/index.aspx?nodeid=96",
+            "label": "参观须知（孔庙和国子监博物馆官网）"
+          },
+          "verifiedAt": null,
+          "lastCollectedAt": null,
+          "note": "开放状态/预约入口未核验不代表不可预约"
+        },
+        "platformBooking": {
+          "携程": {
+            "status": "unverified",
+            "source": {
+              "url": "",
+              "label": ""
+            },
+            "verifiedAt": null,
+            "lastCollectedAt": null,
+            "note": ""
+          },
+          "美团": {
+            "status": "unverified",
+            "source": {
+              "url": "",
+              "label": ""
+            },
+            "verifiedAt": null,
+            "lastCollectedAt": null,
+            "note": ""
+          },
+          "同程": {
+            "status": "unverified",
+            "source": {
+              "url": "",
+              "label": ""
+            },
+            "verifiedAt": null,
+            "lastCollectedAt": null,
+            "note": ""
+          },
+          "飞猪": {
+            "status": "unverified",
+            "source": {
+              "url": "",
+              "label": ""
+            },
+            "verifiedAt": null,
+            "lastCollectedAt": null,
+            "note": ""
+          }
+        }
+      },
+      "migration": {
+        "at": "2026-11-03",
+        "from": "js/data.js (V1.0 bookingInfo + verificationStatus text)",
+        "rule": "verified 仅当原核验文本以「已核实」开头；含⚠️的字段降为 needs_review；预约/平台 pending → unverified；本次迁移未访问任何外部来源"
+      }
+    },
+    "bj-hongluosi": {
+      "cityId": "beijing",
+      "lastCollectedAt": null,
+      "lastFactCheckedAt": "2026-11-02",
+      "sourceStatusText": "部分核实（开放时间来源不一）",
+      "fields": {
+        "basicInfo": {
+          "status": "needs_review",
+          "source": {
+            "url": "http://hongluosi.com/?p=4523/",
+            "label": "综合报价（红螺寺景区官网）"
+          },
+          "verifiedAt": null,
+          "lastCollectedAt": null,
+          "note": ""
+        },
+        "address": {
+          "status": "needs_review",
+          "source": {
+            "url": "http://hongluosi.com/?p=4523/",
+            "label": "综合报价（红螺寺景区官网）"
+          },
+          "verifiedAt": null,
+          "lastCollectedAt": null,
+          "note": ""
+        },
+        "openStatus": {
+          "status": "unverified",
+          "source": {
+            "url": "http://hongluosi.com/?p=4523/",
+            "label": "综合报价（红螺寺景区官网）"
+          },
+          "verifiedAt": null,
+          "lastCollectedAt": null,
+          "note": ""
+        },
+        "openingHours": {
+          "status": "needs_review",
+          "source": {
+            "url": "http://hongluosi.com/?p=4523/",
+            "label": "综合报价（红螺寺景区官网）"
+          },
+          "verifiedAt": null,
+          "lastCollectedAt": null,
+          "note": ""
+        },
+        "ticket": {
+          "status": "needs_review",
+          "source": {
+            "url": "http://hongluosi.com/?p=4523/",
+            "label": "综合报价（红螺寺景区官网）"
+          },
+          "verifiedAt": null,
+          "lastCollectedAt": null,
+          "note": ""
+        },
+        "officialBooking": {
+          "status": "unverified",
+          "source": {
+            "url": "http://hongluosi.com/?p=4523/",
+            "label": "综合报价（红螺寺景区官网）"
+          },
+          "verifiedAt": null,
+          "lastCollectedAt": null,
+          "note": "开放状态/预约入口未核验不代表不可预约"
+        },
+        "platformBooking": {
+          "携程": {
+            "status": "unverified",
+            "source": {
+              "url": "",
+              "label": ""
+            },
+            "verifiedAt": null,
+            "lastCollectedAt": null,
+            "note": ""
+          },
+          "美团": {
+            "status": "unverified",
+            "source": {
+              "url": "",
+              "label": ""
+            },
+            "verifiedAt": null,
+            "lastCollectedAt": null,
+            "note": ""
+          },
+          "同程": {
+            "status": "unverified",
+            "source": {
+              "url": "",
+              "label": ""
+            },
+            "verifiedAt": null,
+            "lastCollectedAt": null,
+            "note": ""
+          },
+          "飞猪": {
+            "status": "unverified",
+            "source": {
+              "url": "",
+              "label": ""
+            },
+            "verifiedAt": null,
+            "lastCollectedAt": null,
+            "note": ""
+          }
+        }
+      },
+      "migration": {
+        "at": "2026-11-03",
+        "from": "js/data.js (V1.0 bookingInfo + verificationStatus text)",
+        "rule": "verified 仅当原核验文本以「已核实」开头；含⚠️的字段降为 needs_review；预约/平台 pending → unverified；本次迁移未访问任何外部来源"
+      }
+    },
+    "bj-guangji": {
+      "cityId": "beijing",
+      "lastCollectedAt": null,
+      "lastFactCheckedAt": "2026-11-02",
+      "sourceStatusText": "部分核实（开放时间来源冲突）",
+      "fields": {
+        "basicInfo": {
+          "status": "needs_review",
+          "source": {
+            "url": "https://www.chinabuddhism.com.cn/web/details/53376",
+            "label": "北京广济寺（中国佛教协会官网·直属寺院）"
+          },
+          "verifiedAt": null,
+          "lastCollectedAt": null,
+          "note": ""
+        },
+        "address": {
+          "status": "needs_review",
+          "source": {
+            "url": "https://www.chinabuddhism.com.cn/web/details/53376",
+            "label": "北京广济寺（中国佛教协会官网·直属寺院）"
+          },
+          "verifiedAt": null,
+          "lastCollectedAt": null,
+          "note": ""
+        },
+        "openStatus": {
+          "status": "unverified",
+          "source": {
+            "url": "https://www.chinabuddhism.com.cn/web/details/53376",
+            "label": "北京广济寺（中国佛教协会官网·直属寺院）"
+          },
+          "verifiedAt": null,
+          "lastCollectedAt": null,
+          "note": ""
+        },
+        "openingHours": {
+          "status": "needs_review",
+          "source": {
+            "url": "https://www.chinabuddhism.com.cn/web/details/53376",
+            "label": "北京广济寺（中国佛教协会官网·直属寺院）"
+          },
+          "verifiedAt": null,
+          "lastCollectedAt": null,
+          "note": ""
+        },
+        "ticket": {
+          "status": "needs_review",
+          "source": {
+            "url": "https://www.chinabuddhism.com.cn/web/details/53376",
+            "label": "北京广济寺（中国佛教协会官网·直属寺院）"
+          },
+          "verifiedAt": null,
+          "lastCollectedAt": null,
+          "note": ""
+        },
+        "officialBooking": {
+          "status": "unverified",
+          "source": {
+            "url": "https://www.chinabuddhism.com.cn/web/details/53376",
+            "label": "北京广济寺（中国佛教协会官网·直属寺院）"
+          },
+          "verifiedAt": null,
+          "lastCollectedAt": null,
+          "note": "开放状态/预约入口未核验不代表不可预约"
+        },
+        "platformBooking": {
+          "携程": {
+            "status": "unverified",
+            "source": {
+              "url": "",
+              "label": ""
+            },
+            "verifiedAt": null,
+            "lastCollectedAt": null,
+            "note": ""
+          },
+          "美团": {
+            "status": "unverified",
+            "source": {
+              "url": "",
+              "label": ""
+            },
+            "verifiedAt": null,
+            "lastCollectedAt": null,
+            "note": ""
+          },
+          "同程": {
+            "status": "unverified",
+            "source": {
+              "url": "",
+              "label": ""
+            },
+            "verifiedAt": null,
+            "lastCollectedAt": null,
+            "note": ""
+          },
+          "飞猪": {
+            "status": "unverified",
+            "source": {
+              "url": "",
+              "label": ""
+            },
+            "verifiedAt": null,
+            "lastCollectedAt": null,
+            "note": ""
+          }
+        }
+      },
+      "migration": {
+        "at": "2026-11-03",
+        "from": "js/data.js (V1.0 bookingInfo + verificationStatus text)",
+        "rule": "verified 仅当原核验文本以「已核实」开头；含⚠️的字段降为 needs_review；预约/平台 pending → unverified；本次迁移未访问任何外部来源"
+      }
+    },
+    "bj-baiyun": {
+      "cityId": "beijing",
+      "lastCollectedAt": null,
+      "lastFactCheckedAt": "2026-11-02",
+      "sourceStatusText": "已核实",
+      "fields": {
+        "basicInfo": {
+          "status": "verified",
+          "source": {
+            "url": "https://www.toutiao.com/article/7698716518086902299/",
+            "label": "漫说「国保」｜白云观：北京第一道观（北京文博·北京市文物局，2026-10-20）"
+          },
+          "verifiedAt": "2026-11-02",
+          "lastCollectedAt": null,
+          "note": ""
+        },
+        "address": {
+          "status": "verified",
+          "source": {
+            "url": "https://www.toutiao.com/article/7698716518086902299/",
+            "label": "漫说「国保」｜白云观：北京第一道观（北京文博·北京市文物局，2026-10-20）"
+          },
+          "verifiedAt": "2026-11-02",
+          "lastCollectedAt": null,
+          "note": ""
+        },
+        "openStatus": {
+          "status": "unverified",
+          "source": {
+            "url": "https://www.toutiao.com/article/7698716518086902299/",
+            "label": "漫说「国保」｜白云观：北京第一道观（北京文博·北京市文物局，2026-10-20）"
+          },
+          "verifiedAt": null,
+          "lastCollectedAt": null,
+          "note": ""
+        },
+        "openingHours": {
+          "status": "verified",
+          "source": {
+            "url": "https://www.toutiao.com/article/7698716518086902299/",
+            "label": "漫说「国保」｜白云观：北京第一道观（北京文博·北京市文物局，2026-10-20）"
+          },
+          "verifiedAt": "2026-11-02",
+          "lastCollectedAt": null,
+          "note": ""
+        },
+        "ticket": {
+          "status": "needs_review",
+          "source": {
+            "url": "https://www.toutiao.com/article/7698716518086902299/",
+            "label": "漫说「国保」｜白云观：北京第一道观（北京文博·北京市文物局，2026-10-20）"
+          },
+          "verifiedAt": null,
+          "lastCollectedAt": null,
+          "note": ""
+        },
+        "officialBooking": {
+          "status": "unverified",
+          "source": {
+            "url": "https://www.toutiao.com/article/7698716518086902299/",
+            "label": "漫说「国保」｜白云观：北京第一道观（北京文博·北京市文物局，2026-10-20）"
+          },
+          "verifiedAt": null,
+          "lastCollectedAt": null,
+          "note": "开放状态/预约入口未核验不代表不可预约"
+        },
+        "platformBooking": {
+          "携程": {
+            "status": "unverified",
+            "source": {
+              "url": "",
+              "label": ""
+            },
+            "verifiedAt": null,
+            "lastCollectedAt": null,
+            "note": ""
+          },
+          "美团": {
+            "status": "unverified",
+            "source": {
+              "url": "",
+              "label": ""
+            },
+            "verifiedAt": null,
+            "lastCollectedAt": null,
+            "note": ""
+          },
+          "同程": {
+            "status": "unverified",
+            "source": {
+              "url": "",
+              "label": ""
+            },
+            "verifiedAt": null,
+            "lastCollectedAt": null,
+            "note": ""
+          },
+          "飞猪": {
+            "status": "unverified",
+            "source": {
+              "url": "",
+              "label": ""
+            },
+            "verifiedAt": null,
+            "lastCollectedAt": null,
+            "note": ""
+          }
+        }
+      },
+      "migration": {
+        "at": "2026-11-03",
+        "from": "js/data.js (V1.0 bookingInfo + verificationStatus text)",
+        "rule": "verified 仅当原核验文本以「已核实」开头；含⚠️的字段降为 needs_review；预约/平台 pending → unverified；本次迁移未访问任何外部来源"
+      }
+    },
+    "bj-wutasi": {
+      "cityId": "beijing",
+      "lastCollectedAt": null,
+      "lastFactCheckedAt": "2026-11-02",
+      "sourceStatusText": "已核实",
+      "fields": {
+        "basicInfo": {
+          "status": "verified",
+          "source": {
+            "url": "https://bjstoneartmuseum.org.cn/CN/service/canguanmenpiao",
+            "label": "导览与服务 / 参观门票（北京石刻艺术博物馆官网）"
+          },
+          "verifiedAt": "2026-11-02",
+          "lastCollectedAt": null,
+          "note": ""
+        },
+        "address": {
+          "status": "verified",
+          "source": {
+            "url": "https://bjstoneartmuseum.org.cn/CN/service/canguanmenpiao",
+            "label": "导览与服务 / 参观门票（北京石刻艺术博物馆官网）"
+          },
+          "verifiedAt": "2026-11-02",
+          "lastCollectedAt": null,
+          "note": ""
+        },
+        "openStatus": {
+          "status": "unverified",
+          "source": {
+            "url": "https://bjstoneartmuseum.org.cn/CN/service/canguanmenpiao",
+            "label": "导览与服务 / 参观门票（北京石刻艺术博物馆官网）"
+          },
+          "verifiedAt": null,
+          "lastCollectedAt": null,
+          "note": ""
+        },
+        "openingHours": {
+          "status": "verified",
+          "source": {
+            "url": "https://bjstoneartmuseum.org.cn/CN/service/canguanmenpiao",
+            "label": "导览与服务 / 参观门票（北京石刻艺术博物馆官网）"
+          },
+          "verifiedAt": "2026-11-02",
+          "lastCollectedAt": null,
+          "note": ""
+        },
+        "ticket": {
+          "status": "verified",
+          "source": {
+            "url": "https://bjstoneartmuseum.org.cn/CN/service/canguanmenpiao",
+            "label": "导览与服务 / 参观门票（北京石刻艺术博物馆官网）"
+          },
+          "verifiedAt": "2026-11-02",
+          "lastCollectedAt": null,
+          "note": ""
+        },
+        "officialBooking": {
+          "status": "unverified",
+          "source": {
+            "url": "https://bjstoneartmuseum.org.cn/CN/service/canguanmenpiao",
+            "label": "导览与服务 / 参观门票（北京石刻艺术博物馆官网）"
+          },
+          "verifiedAt": null,
+          "lastCollectedAt": null,
+          "note": "开放状态/预约入口未核验不代表不可预约"
+        },
+        "platformBooking": {
+          "携程": {
+            "status": "unverified",
+            "source": {
+              "url": "",
+              "label": ""
+            },
+            "verifiedAt": null,
+            "lastCollectedAt": null,
+            "note": ""
+          },
+          "美团": {
+            "status": "unverified",
+            "source": {
+              "url": "",
+              "label": ""
+            },
+            "verifiedAt": null,
+            "lastCollectedAt": null,
+            "note": ""
+          },
+          "同程": {
+            "status": "unverified",
+            "source": {
+              "url": "",
+              "label": ""
+            },
+            "verifiedAt": null,
+            "lastCollectedAt": null,
+            "note": ""
+          },
+          "飞猪": {
+            "status": "unverified",
+            "source": {
+              "url": "",
+              "label": ""
+            },
+            "verifiedAt": null,
+            "lastCollectedAt": null,
+            "note": ""
+          }
+        }
+      },
+      "migration": {
+        "at": "2026-11-03",
+        "from": "js/data.js (V1.0 bookingInfo + verificationStatus text)",
+        "rule": "verified 仅当原核验文本以「已核实」开头；含⚠️的字段降为 needs_review；预约/平台 pending → unverified；本次迁移未访问任何外部来源"
+      }
+    },
+    "hz-lingyin": {
+      "cityId": "hangzhou",
+      "lastCollectedAt": null,
+      "lastFactCheckedAt": "2026-11-02",
+      "sourceStatusText": "已核实（2025-12 门票政策重大变更）",
+      "fields": {
+        "basicInfo": {
+          "status": "verified",
+          "source": {
+            "url": "https://lingyinsi.com/list_57_2.html",
+            "label": "杭州灵隐飞来峰景区预约游览须知（杭州灵隐寺官网）+ 央视网/中国日报2025-11、2025-12报道"
+          },
+          "verifiedAt": "2026-11-02",
+          "lastCollectedAt": null,
+          "note": ""
+        },
+        "address": {
+          "status": "verified",
+          "source": {
+            "url": "https://lingyinsi.com/list_57_2.html",
+            "label": "杭州灵隐飞来峰景区预约游览须知（杭州灵隐寺官网）+ 央视网/中国日报2025-11、2025-12报道"
+          },
+          "verifiedAt": "2026-11-02",
+          "lastCollectedAt": null,
+          "note": ""
+        },
+        "openStatus": {
+          "status": "unverified",
+          "source": {
+            "url": "https://lingyinsi.com/list_57_2.html",
+            "label": "杭州灵隐飞来峰景区预约游览须知（杭州灵隐寺官网）+ 央视网/中国日报2025-11、2025-12报道"
+          },
+          "verifiedAt": null,
+          "lastCollectedAt": null,
+          "note": ""
+        },
+        "openingHours": {
+          "status": "verified",
+          "source": {
+            "url": "https://lingyinsi.com/list_57_2.html",
+            "label": "杭州灵隐飞来峰景区预约游览须知（杭州灵隐寺官网）+ 央视网/中国日报2025-11、2025-12报道"
+          },
+          "verifiedAt": "2026-11-02",
+          "lastCollectedAt": null,
+          "note": ""
+        },
+        "ticket": {
+          "status": "needs_review",
+          "source": {
+            "url": "https://lingyinsi.com/list_57_2.html",
+            "label": "杭州灵隐飞来峰景区预约游览须知（杭州灵隐寺官网）+ 央视网/中国日报2025-11、2025-12报道"
+          },
+          "verifiedAt": null,
+          "lastCollectedAt": null,
+          "note": ""
+        },
+        "officialBooking": {
+          "status": "unverified",
+          "source": {
+            "url": "https://lingyinsi.com/list_57_2.html",
+            "label": "杭州灵隐飞来峰景区预约游览须知（杭州灵隐寺官网）+ 央视网/中国日报2025-11、2025-12报道"
+          },
+          "verifiedAt": null,
+          "lastCollectedAt": null,
+          "note": "开放状态/预约入口未核验不代表不可预约"
+        },
+        "platformBooking": {
+          "携程": {
+            "status": "unverified",
+            "source": {
+              "url": "",
+              "label": ""
+            },
+            "verifiedAt": null,
+            "lastCollectedAt": null,
+            "note": ""
+          },
+          "美团": {
+            "status": "unverified",
+            "source": {
+              "url": "",
+              "label": ""
+            },
+            "verifiedAt": null,
+            "lastCollectedAt": null,
+            "note": ""
+          },
+          "同程": {
+            "status": "unverified",
+            "source": {
+              "url": "",
+              "label": ""
+            },
+            "verifiedAt": null,
+            "lastCollectedAt": null,
+            "note": ""
+          },
+          "飞猪": {
+            "status": "unverified",
+            "source": {
+              "url": "",
+              "label": ""
+            },
+            "verifiedAt": null,
+            "lastCollectedAt": null,
+            "note": ""
+          }
+        }
+      },
+      "migration": {
+        "at": "2026-11-03",
+        "from": "js/data.js (V1.0 bookingInfo + verificationStatus text)",
+        "rule": "verified 仅当原核验文本以「已核实」开头；含⚠️的字段降为 needs_review；预约/平台 pending → unverified；本次迁移未访问任何外部来源"
+      }
+    },
+    "hz-fajing": {
+      "cityId": "hangzhou",
+      "lastCollectedAt": null,
+      "lastFactCheckedAt": "2026-11-02",
+      "sourceStatusText": "部分核实（开放时间来源不一）",
+      "fields": {
+        "basicInfo": {
+          "status": "needs_review",
+          "source": {
+            "url": "https://www.hzfjxh.com/art/231209/88002566",
+            "label": "上天竺法喜讲寺（杭州市佛教协会）"
+          },
+          "verifiedAt": null,
+          "lastCollectedAt": null,
+          "note": ""
+        },
+        "address": {
+          "status": "needs_review",
+          "source": {
+            "url": "https://www.hzfjxh.com/art/231209/88002566",
+            "label": "上天竺法喜讲寺（杭州市佛教协会）"
+          },
+          "verifiedAt": null,
+          "lastCollectedAt": null,
+          "note": ""
+        },
+        "openStatus": {
+          "status": "unverified",
+          "source": {
+            "url": "https://www.hzfjxh.com/art/231209/88002566",
+            "label": "上天竺法喜讲寺（杭州市佛教协会）"
+          },
+          "verifiedAt": null,
+          "lastCollectedAt": null,
+          "note": ""
+        },
+        "openingHours": {
+          "status": "needs_review",
+          "source": {
+            "url": "https://www.hzfjxh.com/art/231209/88002566",
+            "label": "上天竺法喜讲寺（杭州市佛教协会）"
+          },
+          "verifiedAt": null,
+          "lastCollectedAt": null,
+          "note": ""
+        },
+        "ticket": {
+          "status": "needs_review",
+          "source": {
+            "url": "https://www.hzfjxh.com/art/231209/88002566",
+            "label": "上天竺法喜讲寺（杭州市佛教协会）"
+          },
+          "verifiedAt": null,
+          "lastCollectedAt": null,
+          "note": ""
+        },
+        "officialBooking": {
+          "status": "unverified",
+          "source": {
+            "url": "https://www.hzfjxh.com/art/231209/88002566",
+            "label": "上天竺法喜讲寺（杭州市佛教协会）"
+          },
+          "verifiedAt": null,
+          "lastCollectedAt": null,
+          "note": "开放状态/预约入口未核验不代表不可预约"
+        },
+        "platformBooking": {
+          "携程": {
+            "status": "unverified",
+            "source": {
+              "url": "",
+              "label": ""
+            },
+            "verifiedAt": null,
+            "lastCollectedAt": null,
+            "note": ""
+          },
+          "美团": {
+            "status": "unverified",
+            "source": {
+              "url": "",
+              "label": ""
+            },
+            "verifiedAt": null,
+            "lastCollectedAt": null,
+            "note": ""
+          },
+          "同程": {
+            "status": "unverified",
+            "source": {
+              "url": "",
+              "label": ""
+            },
+            "verifiedAt": null,
+            "lastCollectedAt": null,
+            "note": ""
+          },
+          "飞猪": {
+            "status": "unverified",
+            "source": {
+              "url": "",
+              "label": ""
+            },
+            "verifiedAt": null,
+            "lastCollectedAt": null,
+            "note": ""
+          }
+        }
+      },
+      "migration": {
+        "at": "2026-11-03",
+        "from": "js/data.js (V1.0 bookingInfo + verificationStatus text)",
+        "rule": "verified 仅当原核验文本以「已核实」开头；含⚠️的字段降为 needs_review；预约/平台 pending → unverified；本次迁移未访问任何外部来源"
+      }
+    },
+    "hz-jingci": {
+      "cityId": "hangzhou",
+      "lastCollectedAt": null,
+      "lastFactCheckedAt": "2026-11-02",
+      "sourceStatusText": "部分核实（开放时间来源不一）",
+      "fields": {
+        "basicInfo": {
+          "status": "needs_review",
+          "source": {
+            "url": "https://hzfjxh.com/art/231209/33315960",
+            "label": "杭州净慈寺（杭州市佛教协会）"
+          },
+          "verifiedAt": null,
+          "lastCollectedAt": null,
+          "note": ""
+        },
+        "address": {
+          "status": "needs_review",
+          "source": {
+            "url": "https://hzfjxh.com/art/231209/33315960",
+            "label": "杭州净慈寺（杭州市佛教协会）"
+          },
+          "verifiedAt": null,
+          "lastCollectedAt": null,
+          "note": ""
+        },
+        "openStatus": {
+          "status": "unverified",
+          "source": {
+            "url": "https://hzfjxh.com/art/231209/33315960",
+            "label": "杭州净慈寺（杭州市佛教协会）"
+          },
+          "verifiedAt": null,
+          "lastCollectedAt": null,
+          "note": ""
+        },
+        "openingHours": {
+          "status": "needs_review",
+          "source": {
+            "url": "https://hzfjxh.com/art/231209/33315960",
+            "label": "杭州净慈寺（杭州市佛教协会）"
+          },
+          "verifiedAt": null,
+          "lastCollectedAt": null,
+          "note": ""
+        },
+        "ticket": {
+          "status": "needs_review",
+          "source": {
+            "url": "https://hzfjxh.com/art/231209/33315960",
+            "label": "杭州净慈寺（杭州市佛教协会）"
+          },
+          "verifiedAt": null,
+          "lastCollectedAt": null,
+          "note": ""
+        },
+        "officialBooking": {
+          "status": "unverified",
+          "source": {
+            "url": "https://hzfjxh.com/art/231209/33315960",
+            "label": "杭州净慈寺（杭州市佛教协会）"
+          },
+          "verifiedAt": null,
+          "lastCollectedAt": null,
+          "note": "开放状态/预约入口未核验不代表不可预约"
+        },
+        "platformBooking": {
+          "携程": {
+            "status": "unverified",
+            "source": {
+              "url": "",
+              "label": ""
+            },
+            "verifiedAt": null,
+            "lastCollectedAt": null,
+            "note": ""
+          },
+          "美团": {
+            "status": "unverified",
+            "source": {
+              "url": "",
+              "label": ""
+            },
+            "verifiedAt": null,
+            "lastCollectedAt": null,
+            "note": ""
+          },
+          "同程": {
+            "status": "unverified",
+            "source": {
+              "url": "",
+              "label": ""
+            },
+            "verifiedAt": null,
+            "lastCollectedAt": null,
+            "note": ""
+          },
+          "飞猪": {
+            "status": "unverified",
+            "source": {
+              "url": "",
+              "label": ""
+            },
+            "verifiedAt": null,
+            "lastCollectedAt": null,
+            "note": ""
+          }
+        }
+      },
+      "migration": {
+        "at": "2026-11-03",
+        "from": "js/data.js (V1.0 bookingInfo + verificationStatus text)",
+        "rule": "verified 仅当原核验文本以「已核实」开头；含⚠️的字段降为 needs_review；预约/平台 pending → unverified；本次迁移未访问任何外部来源"
+      }
+    },
+    "hz-tianzhu": {
+      "cityId": "hangzhou",
+      "lastCollectedAt": null,
+      "lastFactCheckedAt": "2026-11-02",
+      "sourceStatusText": "基础历史资料已核对；开放时间、门票及预约政策待寺院确认",
+      "fields": {
+        "basicInfo": {
+          "status": "needs_review",
+          "source": {
+            "url": "https://www.hzfjxh.com/art/231209/30379888",
+            "label": "市属场所（中天竺法净禅寺）—杭州市佛教协会"
+          },
+          "verifiedAt": null,
+          "lastCollectedAt": null,
+          "note": ""
+        },
+        "address": {
+          "status": "needs_review",
+          "source": {
+            "url": "https://www.hzfjxh.com/art/231209/30379888",
+            "label": "市属场所（中天竺法净禅寺）—杭州市佛教协会"
+          },
+          "verifiedAt": null,
+          "lastCollectedAt": null,
+          "note": ""
+        },
+        "openStatus": {
+          "status": "unverified",
+          "source": {
+            "url": "https://www.hzfjxh.com/art/231209/30379888",
+            "label": "市属场所（中天竺法净禅寺）—杭州市佛教协会"
+          },
+          "verifiedAt": null,
+          "lastCollectedAt": null,
+          "note": ""
+        },
+        "openingHours": {
+          "status": "needs_review",
+          "source": {
+            "url": "https://www.hzfjxh.com/art/231209/30379888",
+            "label": "市属场所（中天竺法净禅寺）—杭州市佛教协会"
+          },
+          "verifiedAt": null,
+          "lastCollectedAt": null,
+          "note": ""
+        },
+        "ticket": {
+          "status": "needs_review",
+          "source": {
+            "url": "https://www.hzfjxh.com/art/231209/30379888",
+            "label": "市属场所（中天竺法净禅寺）—杭州市佛教协会"
+          },
+          "verifiedAt": null,
+          "lastCollectedAt": null,
+          "note": ""
+        },
+        "officialBooking": {
+          "status": "unverified",
+          "source": {
+            "url": "https://www.hzfjxh.com/art/231209/30379888",
+            "label": "市属场所（中天竺法净禅寺）—杭州市佛教协会"
+          },
+          "verifiedAt": null,
+          "lastCollectedAt": null,
+          "note": "开放状态/预约入口未核验不代表不可预约"
+        },
+        "platformBooking": {
+          "携程": {
+            "status": "unverified",
+            "source": {
+              "url": "",
+              "label": ""
+            },
+            "verifiedAt": null,
+            "lastCollectedAt": null,
+            "note": ""
+          },
+          "美团": {
+            "status": "unverified",
+            "source": {
+              "url": "",
+              "label": ""
+            },
+            "verifiedAt": null,
+            "lastCollectedAt": null,
+            "note": ""
+          },
+          "同程": {
+            "status": "unverified",
+            "source": {
+              "url": "",
+              "label": ""
+            },
+            "verifiedAt": null,
+            "lastCollectedAt": null,
+            "note": ""
+          },
+          "飞猪": {
+            "status": "unverified",
+            "source": {
+              "url": "",
+              "label": ""
+            },
+            "verifiedAt": null,
+            "lastCollectedAt": null,
+            "note": ""
+          }
+        }
+      },
+      "migration": {
+        "at": "2026-11-03",
+        "from": "js/data.js (V1.0 bookingInfo + verificationStatus text)",
+        "rule": "verified 仅当原核验文本以「已核实」开头；含⚠️的字段降为 needs_review；预约/平台 pending → unverified；本次迁移未访问任何外部来源"
+      }
+    },
+    "hz-yuelaomiao": {
+      "cityId": "hangzhou",
+      "lastCollectedAt": null,
+      "lastFactCheckedAt": "2026-11-02",
+      "sourceStatusText": "地点已修正；票务与开放需以园区最新公告核实",
+      "fields": {
+        "basicInfo": {
+          "status": "needs_review",
+          "source": {
+            "url": "https://westlake.hangzhou.gov.cn/col/col1639430/art/2026/art_e6932afc35d84c71bdf07f223c7c4b11.html",
+            "label": "一窗揽夏，黄龙洞夏日寻凉缘（杭州西湖风景名胜区管委会，2026）"
+          },
+          "verifiedAt": null,
+          "lastCollectedAt": null,
+          "note": ""
+        },
+        "address": {
+          "status": "needs_review",
+          "source": {
+            "url": "https://westlake.hangzhou.gov.cn/col/col1639430/art/2026/art_e6932afc35d84c71bdf07f223c7c4b11.html",
+            "label": "一窗揽夏，黄龙洞夏日寻凉缘（杭州西湖风景名胜区管委会，2026）"
+          },
+          "verifiedAt": null,
+          "lastCollectedAt": null,
+          "note": ""
+        },
+        "openStatus": {
+          "status": "unverified",
+          "source": {
+            "url": "https://westlake.hangzhou.gov.cn/col/col1639430/art/2026/art_e6932afc35d84c71bdf07f223c7c4b11.html",
+            "label": "一窗揽夏，黄龙洞夏日寻凉缘（杭州西湖风景名胜区管委会，2026）"
+          },
+          "verifiedAt": null,
+          "lastCollectedAt": null,
+          "note": ""
+        },
+        "openingHours": {
+          "status": "needs_review",
+          "source": {
+            "url": "https://westlake.hangzhou.gov.cn/col/col1639430/art/2026/art_e6932afc35d84c71bdf07f223c7c4b11.html",
+            "label": "一窗揽夏，黄龙洞夏日寻凉缘（杭州西湖风景名胜区管委会，2026）"
+          },
+          "verifiedAt": null,
+          "lastCollectedAt": null,
+          "note": ""
+        },
+        "ticket": {
+          "status": "needs_review",
+          "source": {
+            "url": "https://westlake.hangzhou.gov.cn/col/col1639430/art/2026/art_e6932afc35d84c71bdf07f223c7c4b11.html",
+            "label": "一窗揽夏，黄龙洞夏日寻凉缘（杭州西湖风景名胜区管委会，2026）"
+          },
+          "verifiedAt": null,
+          "lastCollectedAt": null,
+          "note": ""
+        },
+        "officialBooking": {
+          "status": "unverified",
+          "source": {
+            "url": "https://westlake.hangzhou.gov.cn/col/col1639430/art/2026/art_e6932afc35d84c71bdf07f223c7c4b11.html",
+            "label": "一窗揽夏，黄龙洞夏日寻凉缘（杭州西湖风景名胜区管委会，2026）"
+          },
+          "verifiedAt": null,
+          "lastCollectedAt": null,
+          "note": "开放状态/预约入口未核验不代表不可预约"
+        },
+        "platformBooking": {
+          "携程": {
+            "status": "unverified",
+            "source": {
+              "url": "",
+              "label": ""
+            },
+            "verifiedAt": null,
+            "lastCollectedAt": null,
+            "note": ""
+          },
+          "美团": {
+            "status": "unverified",
+            "source": {
+              "url": "",
+              "label": ""
+            },
+            "verifiedAt": null,
+            "lastCollectedAt": null,
+            "note": ""
+          },
+          "同程": {
+            "status": "unverified",
+            "source": {
+              "url": "",
+              "label": ""
+            },
+            "verifiedAt": null,
+            "lastCollectedAt": null,
+            "note": ""
+          },
+          "飞猪": {
+            "status": "unverified",
+            "source": {
+              "url": "",
+              "label": ""
+            },
+            "verifiedAt": null,
+            "lastCollectedAt": null,
+            "note": ""
+          }
+        }
+      },
+      "migration": {
+        "at": "2026-11-03",
+        "from": "js/data.js (V1.0 bookingInfo + verificationStatus text)",
+        "rule": "verified 仅当原核验文本以「已核实」开头；含⚠️的字段降为 needs_review；预约/平台 pending → unverified；本次迁移未访问任何外部来源"
+      }
+    },
+    "hz-baopu": {
+      "cityId": "hangzhou",
+      "lastCollectedAt": null,
+      "lastFactCheckedAt": "2026-11-02",
+      "sourceStatusText": "部分核实（无官方页面）",
+      "fields": {
+        "basicInfo": {
+          "status": "needs_review",
+          "source": {
+            "url": "https://hznews.hangzhou.com.cn/chengshi/content/2025-08/02/content_9052255_0.htm",
+            "label": "面朝西湖水，隐于葛岭中，杭州千年古迹抱朴道院你去过吗？（杭州网，2025-08）"
+          },
+          "verifiedAt": null,
+          "lastCollectedAt": null,
+          "note": ""
+        },
+        "address": {
+          "status": "needs_review",
+          "source": {
+            "url": "https://hznews.hangzhou.com.cn/chengshi/content/2025-08/02/content_9052255_0.htm",
+            "label": "面朝西湖水，隐于葛岭中，杭州千年古迹抱朴道院你去过吗？（杭州网，2025-08）"
+          },
+          "verifiedAt": null,
+          "lastCollectedAt": null,
+          "note": ""
+        },
+        "openStatus": {
+          "status": "unverified",
+          "source": {
+            "url": "https://hznews.hangzhou.com.cn/chengshi/content/2025-08/02/content_9052255_0.htm",
+            "label": "面朝西湖水，隐于葛岭中，杭州千年古迹抱朴道院你去过吗？（杭州网，2025-08）"
+          },
+          "verifiedAt": null,
+          "lastCollectedAt": null,
+          "note": ""
+        },
+        "openingHours": {
+          "status": "needs_review",
+          "source": {
+            "url": "https://hznews.hangzhou.com.cn/chengshi/content/2025-08/02/content_9052255_0.htm",
+            "label": "面朝西湖水，隐于葛岭中，杭州千年古迹抱朴道院你去过吗？（杭州网，2025-08）"
+          },
+          "verifiedAt": null,
+          "lastCollectedAt": null,
+          "note": ""
+        },
+        "ticket": {
+          "status": "needs_review",
+          "source": {
+            "url": "https://hznews.hangzhou.com.cn/chengshi/content/2025-08/02/content_9052255_0.htm",
+            "label": "面朝西湖水，隐于葛岭中，杭州千年古迹抱朴道院你去过吗？（杭州网，2025-08）"
+          },
+          "verifiedAt": null,
+          "lastCollectedAt": null,
+          "note": ""
+        },
+        "officialBooking": {
+          "status": "unverified",
+          "source": {
+            "url": "https://hznews.hangzhou.com.cn/chengshi/content/2025-08/02/content_9052255_0.htm",
+            "label": "面朝西湖水，隐于葛岭中，杭州千年古迹抱朴道院你去过吗？（杭州网，2025-08）"
+          },
+          "verifiedAt": null,
+          "lastCollectedAt": null,
+          "note": "开放状态/预约入口未核验不代表不可预约"
+        },
+        "platformBooking": {
+          "携程": {
+            "status": "unverified",
+            "source": {
+              "url": "",
+              "label": ""
+            },
+            "verifiedAt": null,
+            "lastCollectedAt": null,
+            "note": ""
+          },
+          "美团": {
+            "status": "unverified",
+            "source": {
+              "url": "",
+              "label": ""
+            },
+            "verifiedAt": null,
+            "lastCollectedAt": null,
+            "note": ""
+          },
+          "同程": {
+            "status": "unverified",
+            "source": {
+              "url": "",
+              "label": ""
+            },
+            "verifiedAt": null,
+            "lastCollectedAt": null,
+            "note": ""
+          },
+          "飞猪": {
+            "status": "unverified",
+            "source": {
+              "url": "",
+              "label": ""
+            },
+            "verifiedAt": null,
+            "lastCollectedAt": null,
+            "note": ""
+          }
+        }
+      },
+      "migration": {
+        "at": "2026-11-03",
+        "from": "js/data.js (V1.0 bookingInfo + verificationStatus text)",
+        "rule": "verified 仅当原核验文本以「已核实」开头；含⚠️的字段降为 needs_review；预约/平台 pending → unverified；本次迁移未访问任何外部来源"
+      }
+    }
+  }
+}
